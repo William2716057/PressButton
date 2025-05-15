@@ -8,9 +8,6 @@
         android:text="Press Here"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:id="@+id/button1"
-        android:layout_marginBottom="252.5dp"
-        android:layout_marginRight="288.5dp" />
+        android:layout_centerInParent="true"/>
 </RelativeLayout> 
