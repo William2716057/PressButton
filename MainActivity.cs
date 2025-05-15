@@ -14,6 +14,15 @@ namespace button
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            // get button by ID (button1)
+            Android.Widget.Button button = FindViewById<Android.Widget.Button>(Resource.Id.button1);
+
+            button.Click += (sender, e) =>
+            {
+                button.Text = "Clicked";
+            };
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
